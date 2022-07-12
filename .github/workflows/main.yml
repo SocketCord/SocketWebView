@@ -10,12 +10,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
      - run: |
-          echo pwd,
-          pwd,
-          tree,
           ls
-     - name: Use oxr463/setup-cordova
-       uses: oxr463/setup-cordova@0.0.3
-       with:
-        exec: |
-          cordova build android
+     
