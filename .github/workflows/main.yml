@@ -9,16 +9,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-     - name: Use coturiv/setup-ionic
-       uses: coturiv/setup-ionic@v1
+     - name: Use oxr463/setup-cordova
+       uses: oxr463/setup-cordova@0.0.3
        with:
-         java-version: 8
-     - name: Use coturiv/setup-ionic
-       uses: coturiv/setup-ionic@v1
-       with:
-        cordova-version: 8
-
-     - name: Build
-       run: |
-        ls &&\
-        cordova build android
+        exec: |
+          cordova build android
