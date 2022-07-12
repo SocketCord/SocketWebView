@@ -9,7 +9,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Build APK
-        run: cordova build --no-telemetry && \
-              cp "$(find . -name '*.apk')" .
+     - uses: oxr463/setup-cordova@0.0.2
+     - name: Use oxr463/setup-cordova
+     - run: cordova build --no-telemetry && cp "$(find . -name '*.apk')" .
