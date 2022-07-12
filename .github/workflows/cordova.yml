@@ -1,0 +1,9 @@
+- name: Setup Cordova
+  # You may pin to the exact commit or the version.
+  # uses: oxr463/setup-cordova@e8d82353fc9b77e4abb4972caf9262a5b2ae06b2
+  uses: oxr463/setup-cordova@0.0.3
+  with:
+    # Apache Cordova command to execute
+    exec: |
+      cordova build --no-telemetry && \
+      cp "$(find . -name '*.apk')" .
