@@ -10,6 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
      - name: Use oxr463/setup-cordova
+     - run: |
+          echo pwd,
+          pwd,
+          tree,
+          ls
+     - name: Use oxr463/setup-cordova
        uses: oxr463/setup-cordova@0.0.3
        with:
         exec: |
