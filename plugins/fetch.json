@@ -1,0 +1,10 @@
+{
+  "cordova-plugin-injectview": {
+    "source": {
+      "type": "registry",
+      "id": "https://github.com/formulateco/cordova-plugin-injectview.git"
+    },
+    "is_top_level": true,
+    "variables": {}
+  }
+}
