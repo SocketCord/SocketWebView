@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
      - run: |
-          ls,
-          cd SocketWebView,
+          ls
+          cd SocketWebView
           ls
      
