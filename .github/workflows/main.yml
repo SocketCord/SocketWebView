@@ -11,6 +11,6 @@ jobs:
     steps:
      - run: |
           ls
-          cd SocketWebView
+          cd www
           ls
      
