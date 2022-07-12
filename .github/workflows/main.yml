@@ -9,6 +9,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-     - uses: oxr463/setup-cordova@0.0.2
-     - name: Use oxr463/setup-cordova
-     - run: cordova build --no-telemetry && cp "$(find . -name '*.apk')" .
+     - name: Use coturiv/setup-ionic
+       uses: coturiv/setup-ionic@v1
+       with:
+         java-version: 8
+     - name: Use coturiv/setup-ionic
+       uses: coturiv/setup-ionic@v1
+       with:
+        cordova-version: 8
+
+     - name: Build
+       run: |
+        cordova build android
